@@ -1,171 +1,708 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zealofy</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/00cc41bdeb.css" crossorigin="anonymous"> 
-  </head>
-  <body>
-    <section id="title">
-       
+
+<head>
+  <!-- Importing mdb cdn  -->
+  <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- Google- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Crimson+Pro:wght@300&display=swap"
+    rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zealofy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/00cc41bdeb.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Body starts -->
+<body>
+  <section id="title">
+    <!-- Navbar  -->
+   
       <nav class="navbar navbar-expand-md bg-light bg-body-tertiary px-5 sticky-sm-top">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-4" href="#">Zealofy</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">How it works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> </a>
-            </li>
-            <form class="d-flex " role="search">
-            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-          </ul>
-          <ul class="navbar-nav  mb-2 mb-lg-0  justify-content-end" >
-              <li  class="nav-item me-2 pb-2 ">
-              <a class="nav-link  btn btn-primary" style="color: aliceblue" href="">LogIn</a>
-            </li>
-            <li  class="nav-item me-2">
-              <a class="nav-link btn btn-success"  style="color: aliceblue" href="">SignUp</a>
-            </li>
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4 colo" href="#">Zealofy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item colo">
+                <a class="nav-link active colo" aria-current="page" href="#">How it works</a>
+              </li>
+              <li class="nav-item colo">
+                <a class="nav-link active colo" href="#">Events</a>
+              </li>
+              <li class="nav-item colo">
+                <a class="nav-link colo" href="#"> Something </a>
+              </li>
+              <form class="d-flex " role="search">
+                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </ul>
+            <ul class="navbar-nav  mb-2 mb-lg-0  justify-content-end">
+              <li class="nav-item me-2 pb-2 ">
+                <a class="nav-link  btn btn-primary" style="color: aliceblue" href="">LogIn</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link btn btn-success" style="color: aliceblue" href="">SignUp</a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      
+      <!-- Top Content -->
+      
+      <!-- <div class="bg-image ripple">
+        <img
+          style="height: 50%;"
+          src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg"
+          class="w-90"
+          alt="Louvre Museum"
+        />
+        <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.3)">
+          <div class="d-flex justify-content-center align-items-top h-100">
+            <h1 style="font-family: 'Cinzel', serif;
+            font-family: 'Crimson Pro', serif; font-size: 90px; color: rgb(224, 225, 233); padding-top: 100px;" >Find the Right Oppurtunity!</h1>
+          </div>
+        </div>
+      </div> -->
+  
+       <div id="intro" class="bg-image vh-100 shadow-1-strong">
+        <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
+          <source class="h-100" src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+        </video>
+        <div class="mask"     style="
+        background: linear-gradient(
+          45deg,
+          rgba(105, 103, 103, 0.7),
+          rgba(31, 25, 25, 0.7) 100%
+        );
+      ">
+          <div class="container d-flex align-items-center justify-content-center text-center h-100">
+            <div class="text-white" style="align-items: center;">
+              <h1 class="mb-3"> This site is a great place for sponsorships </h1>
+              <h3 class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, architecto.</h3>
+              <h1 class="mb-3">FInd the Right Oppurtunity</h1>
+              <h5 class="mb-4">Best & free guide of responsive web design</h5>
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="#!"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+                >I am an event sponsor</a
+              >
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="#!"
+                target="_blank"
+                role="button"
+                >I am an event organizer</a
+              >
             
-          </ul>
+
+            <div class="row main">
+              <p class="text-center"> Used By</p>
+              
+              <div class="col-md-3 col-sm-6">
+                <img class="bgi" src="/image/forbes@2x.png" alt="">
+               
+              </div>
+              <div class="col-md-3 col-sm-6" >
+                <img class="bgi"src="/image/forbes@2x.png" alt="">
+              
+    
+
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="bgi"src="/image/forbes@2x.png" alt="">
+
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="bgi" src="/image/forbes@2x.png" alt="">
+               
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div> 
+
+    <!-- Testimonials -->
+      <div class="container testimony" style="background: linear-gradient(
+        45deg,
+        rgba(13, 13, 14, 0.975),
+          rgb(35, 66, 80) 100%
+      )">
+        <div class="row rs" style="height: 250px; width: 100%;
+        background:linear-gradient(45deg,rgba(13, 13, 14, 0.975),
+          rgb(35, 66, 80) 100%); text-align: center;
+        padding-top: 30px; margin-left: 0px;">
+          <h2 class="text-center mb-3"
+          style="padding: auto;
+          text-align: center;
+          padding-top: 70px;    ">Testimonials</h2>
+
+        </div>
+        <div class="row rs" style="margin: 50px,80px,80px,50px;">
+          <div class="col-md-3 col-sm-6 cs">
+            <div class="card text-center ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+              <div class="card-header">Featured</div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+            
+                <button type="button" class="btn btn-primary">Button</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 cs">
+            <div class="card text-center ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+              <div class="card-header">Featured</div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+            
+                <button type="button" class="btn btn-primary">Button</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 cs">
+            <div class="card text-center ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+              <div class="card-header">Featured</div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+            
+                <button type="button" class="btn btn-primary">Button</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 cs">
+            <div class="card text-center ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+              <div class="card-header">Featured</div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+            
+                <button type="button" class="btn btn-primary">Button</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 cs">
+            <div class="card text-center ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+              <div class="card-header">Featured</div>
+              <div class="card-body" style="background-color: rgba(251, 251, 251, 0.15)">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+            
+                <button type="button" class="btn btn-primary">Button</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 cs">
+            <div class="card text-center ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                </a>
+              </div>
+              <div class="card-header">Featured</div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+            
+                <button type="button" class="btn btn-primary">Button</button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </nav>
-   
-<!-- body first strip (HOME-PAGE)-->
-    <div class="row px-5" style="background-color: rgb(117, 114, 114);">
-      <div class="col-md-6 ">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero adipisci reiciendis expedita a eius officiis nesciunt pariatur voluptas debitis sit! Laboriosam, amet error. Corrupti eaque fugit architecto ab qui nesciunt quibusdam quam nemo repellat, ea ipsam, sequi labore praesentium, eligendi harum nihil suscipit dignissimos voluptates accusantium tempora? Assumenda, aut nemo possimus nobis iste ducimus quaerat rerum vitae excepturi est nesciunt ex, accusantium fuga quia pariatur. Numquam, consequuntur, expedita odio sequi quisquam nobis, eum aspernatur odit quas fugit ipsam nemo aut commodi voluptates! Quos eligendi dolor molestiae. Earum, incidunt nihil porro, ea expedita fugiat, nostrum facilis atque dolore quia necessitatibus temporibus.
-      </div>
-      <div class="col-md-6">
-        <img src="" alt="">
-      </div>
-    </div>
-    </section>
+
+
+
+    <!-- Used By -->
+    <!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" style="margin-top: 10px;"data-mdb-ride="carousel">
+  <!-- Indicators -->
+  
 
 
 
 
-
-
-
-
-
-
-
-   
-    <!-- <p class="px-5">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quibusdam voluptas deserunt dolorem provident mollitia laudantium quo culpa ad corrupti harum fugiat molestias, voluptatum ipsum cupiditate earum similique blanditiis? Sed nisi deserunt possimus illo, magni quo enim vero excepturi cum doloribus est voluptates totam natus inventore. Repellendus molestias recusandae alias, dolores, deleniti saepe ad culpa veritatis reiciendis totam animi cupiditate soluta placeat fugit blanditiis earum. Hic dolores facilis fuga corrupti magni. Corrupti quia dolorem distinctio ab neque sapiente provident omnis reprehenderit minus, modi dolores aliquid beatae a nostrum non quidem dignissimos accusamus numquam voluptatum animi minima esse quos placeat! Ipsam laborum aut pariatur aperiam cumque officiis fuga adipisci ratione facere molestiae possimus non eum at, eos incidunt praesentium dolorem. Accusantium adipisci nisi, ratione a ducimus tempora porro aspernatur et veritatis, sed corrupti ipsam ea officiis, perferendis aliquam fuga non temporibus ab saepe deleniti cum. Tenetur consequatur voluptates vitae amet exercitationem laboriosam dolorem veritatis molestiae eum fugiat aspernatur expedita, repellat incidunt blanditiis error magni laudantium recusandae excepturi magnam nam id, reiciendis labore. Vero, incidunt dolore! Voluptas praesentium accusantium est eius, maiores adipisci ipsa nobis voluptate facere sunt eos sint enim eaque velit laborum laudantium asperiores nostrum. Eaque nobis labore accusamus dolore ut itaque modi, praesentium natus iusto dolor, error aliquam illum a id adipisci. Rem ipsam, dicta reprehenderit dignissimos voluptates quisquam illum sed quo at vitae? Ipsum error amet facilis nihil incidunt minus cum rerum repellat! Necessitatibus quis consequuntur nisi tenetur? Harum asperiores et laboriosam temporibus? Vitae culpa iure provident incidunt pariatur quidem totam dicta aliquam illum doloribus, enim, nemo harum sed. Voluptatum natus expedita accusantium deleniti iure voluptas, pariatur repellat enim, quo vitae quis sapiente? Ut ipsum dicta odit molestias recusandae laboriosam veritatis ducimus repudiandae sint, ad adipisci fugit illum repellat fugiat eaque aliquid quas vel error est facilis. Possimus doloribus, doloremque architecto assumenda iste deserunt ipsum fuga rem quaerat eaque? Sunt earum deleniti odio exercitationem fuga mollitia, soluta repellendus quas, ad, quasi animi commodi tempora ullam architecto harum dignissimos consequuntur illum! Odit repudiandae tempore itaque. Adipisci vero omnis sint veniam nam obcaecati delectus consequatur, vitae voluptatibus. Tempora doloremque reiciendis explicabo illo in fuga consequatur autem quisquam nemo. Sequi, facilis? Incidunt dolor recusandae nulla doloribus sequi, aliquid non quasi, suscipit cumque molestiae distinctio qui sunt sint iure totam voluptas ipsa dolore eveniet, beatae fuga deleniti! Harum tempore corporis earum optio et deserunt unde accusantium ratione facilis, perspiciatis ad pariatur dolor voluptates voluptatem id repellendus ducimus, eveniet consequuntur veniam dignissimos! Alias consectetur ducimus perferendis? Eum aliquid quo accusantium molestiae minima nisi modi ut placeat ex nihil veritatis magni molestias exercitationem laudantium iusto cumque dolorem consectetur asperiores, architecto expedita ratione. Dolor, optio possimus? Necessitatibus enim, doloribus ipsum sed blanditiis velit tenetur culpa, itaque incidunt voluptas ut commodi? Quibusdam, inventore adipisci veritatis aut illum iure architecto veniam rerum itaque rem distinctio eveniet, ducimus ad nihil ipsum quasi placeat alias saepe iusto, sapiente soluta natus! Nam expedita reprehenderit in, commodi minus repellendus eaque impedit, voluptate cupiditate libero dolorem distinctio ullam perspiciatis, tempore accusamus ipsam possimus molestias itaque. Recusandae, molestias! Odit cumque neque quaerat consequuntur voluptatem sit necessitatibus ratione distinctio laboriosam ab. Laboriosam labore quos debitis dicta error! Impedit praesentium repellat iusto vero inventore, odit totam officia voluptatum quaerat consequuntur. Soluta consectetur ut non aliquid mollitia animi. Earum corrupti iure ut similique dolores accusamus, beatae, nemo, natus ratione atque veniam amet eveniet doloremque impedit ipsum praesentium neque fugit recusandae consequatur? Dolorum nesciunt ratione, eligendi repellendus eveniet doloribus ut corporis quibusdam eius dolor ad beatae similique soluta at praesentium accusamus libero nihil explicabo, aspernatur, officia ipsam architecto. At nulla tenetur dicta ut obcaecati. Explicabo animi eius repellat necessitatibus expedita mollitia corporis! Repudiandae consequatur quia nobis inventore aliquid, eveniet veritatis similique id ea eius dolor omnis voluptate? Libero dicta amet perferendis, suscipit vero rerum iure atque tempora laudantium veritatis dolor earum quod ex? Harum facilis ab voluptates saepe possimus pariatur, fugit corporis, natus alias hic iusto rerum minus aliquam. Sint nobis asperiores optio cumque dolores corporis laudantium provident, laboriosam repellendus! Minima ad assumenda odio in quae qui eveniet dicta fugit sapiente? Quaerat atque tempora labore rerum beatae quo. Ducimus omnis natus reiciendis mollitia, iste vitae ad eos maiores, officiis nobis maxime ipsam animi. Eveniet a sit nesciunt sunt libero laboriosam quam numquam autem, suscipit, velit id ad culpa commodi dolorum? Modi facere ipsam qui voluptatum harum suscipit laboriosam rerum, quas consequatur voluptatem nobis ducimus explicabo labore nesciunt commodi natus quis ut similique accusamus dolor non laborum vitae beatae? Adipisci dolore, molestias doloribus iure deleniti beatae at nobis numquam corrupti accusantium? Numquam adipisci accusantium repudiandae fuga et quaerat eligendi tenetur dolor, perferendis ex autem, molestiae repellendus cum reiciendis reprehenderit magni dicta optio cumque eaque nulla. Nihil, dolores! Officiis non, facilis quia, aperiam voluptates voluptatibus minus maxime sequi, perferendis modi porro? Eveniet in voluptates, quas excepturi earum fugit aliquam maxime aut ab reiciendis dignissimos commodi exercitationem blanditiis sequi numquam totam? Voluptatibus dolorum illum neque harum architecto, officia tempora! Impedit, sint dolorum vero placeat dignissimos, vitae natus nostrum earum veniam in aperiam doloremque adipisci fuga exercitationem amet similique! Assumenda quibusdam repellendus provident exercitationem nobis ullam quisquam minima. Vitae iusto quis voluptates quam quae illum fugiat, excepturi beatae rerum magni laboriosam in, aliquid vel quos, facilis sequi maxime commodi veniam dolor repudiandae autem eius corporis. Enim, quaerat. Nisi vero eveniet laboriosam, deserunt pariatur, quos facilis quasi sequi exercitationem blanditiis animi, tempore earum hic quas illo ut dolore vel! Voluptatem nisi doloremque error quis earum cumque blanditiis eligendi aut, omnis debitis quas dolor, dignissimos aspernatur quisquam sint provident corrupti. Eum voluptatibus molestiae itaque perspiciatis sint ab numquam nostrum provident dolores. Quam repudiandae minima assumenda sit, architecto accusantium quos perspiciatis? Est animi, consectetur sequi recusandae culpa aliquam molestias, doloribus distinctio obcaecati possimus, qui rerum voluptates minima. Aliquam, reiciendis rem minima culpa iusto inventore sit possimus consequuntur quidem facere atque assumenda vero voluptatibus magni fugit eaque aliquid sequi illo incidunt! Voluptatibus assumenda quidem, odio, vitae ipsum porro adipisci doloribus nemo dolor expedita totam pariatur itaque molestias quisquam unde omnis nulla quibusdam, nisi harum eum?
-    </p> -->
-
-<section id="footer">
-  <footer class="text-center text-lg-start bg-dark text-muted ">
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 px-5 border-bottom">
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <div >
-      <a href="" class="me-4 text-reset">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa-brands fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </div>
-  </section>
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <div class="row mt-3">
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Zealofy.com</a>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
   </div>
-</footer>
-</section>
 
-    <script src="https://kit.fontawesome.com/00cc41bdeb.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+  <!-- Inner -->
+  <div class="carousel-inner">
+
+
+    <!-- Single item -->
+    <div class="carousel-item active">
+     <div class="card-img-overlay" style=" background: rgba(0, 0, 0, 0.695);">
+      <h1 class="carous-img"style="font-size: 40px;align-items: center; text-align: center;color: aqua;
+      padding-top: 120px;">gkjsg</h1>
+      
+     </div>
+
+
+
+
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="Sunset Over the City"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 >First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item ">
+      <div class="card-img-overlay" style=" background: rgba(0, 0, 0, 0.695);">
+        <h1 class="carous-img" style="font-size: 40px;align-items: center; text-align: center;color: aqua;
+        padding-top: 120px;">gkjsg</h1>
+        
+       </div>
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100" alt="Canyon at Nigh"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="card-img-overlay" style=" background: rgba(0, 0, 0, 0.695);">
+        <h1 class="carous-img"style="font-size: 40px;align-items: center; text-align: center;color: aqua;
+        padding: 120px;">gkjsg</h1>
+        
+       </div>
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
+    
+
+   
+    
+
+    <!-- Event Type  -->
+    <div class="container eventc" style="
+    background: linear-gradient(
+      45deg,
+      rgba(243, 159, 41, 0.7),
+      rgba(215, 7, 7, 0.467) 100%
+    );
+    padding-left: 70px;
+    padding-right: 70px;">
+      
+      <p class="text-center" style="font-family: 'Cinzel', serif;
+      font-family: 'Crimson Pro', serif; font-size: 50px; ">
+        What Event are you looking for?
+      </p>
+      <hr color="red" style=" height: 5px; color:red;width: 20%; size:5px; margin: auto;">
+
+      <div class="row">
+        <div class=" col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100 img-thumbnail img-fluid rounded" />
+            
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Event 1</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Event -2</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Can you see me?</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Can you see me?</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Event 1</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Event -2</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Can you see me?</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Can you see me?</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class=" col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Event 1</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Event -2</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" ; data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Can you see me?</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="bg-image ripple hover-zoom eventimg" data-mdb-ripple-color="light">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100 h-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <p class="text-white mb-0">Can you see me?</p>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Event Type ends -->
+
+
+
+
+    <!-- body first strip (HOME-PAGE)-->
+   
+  </section>
+
+
+<!-- footer -->
+  <section id="footer">
+    <footer class="text-center text-lg-start bg-dark text-muted ">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 px-5 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa-brands fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Company name
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Zealofy.com</a>
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://kit.fontawesome.com/00cc41bdeb.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
